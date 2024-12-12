@@ -1,0 +1,10 @@
+spring:
+  freemarker:
+    template-loader-path: classpath:/templates
+    suffix: .ftl
+
+  devtools:
+    livereload:
+      enabled: true
+    freemaker:
+      cache: false
