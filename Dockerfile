@@ -6,7 +6,10 @@ WORKDIR /app
 # 프로젝트의 Gradle Wrapper나 Maven 사용 여부에 따라 변경
 COPY . .
 
-# Gradle 사용하는 경우
+# 실행 권한 추가!
+RUN chmod +x ./gradlew
+
+# Gradle 빌드 실행
 RUN ./gradlew clean build -x test
 
 # Maven 사용하는 경우 (주석 해제 후 Gradle 부분은 주석 처리)
