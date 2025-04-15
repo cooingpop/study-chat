@@ -1,0 +1,242 @@
+:root {
+    --spring-dark: #1b1f23;
+    --spring-green: #6db33f;
+    --spring-light: #f1f1f1;
+    --border-color: #4c555c;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--spring-dark);
+    color: var(--spring-light);
+}
+
+#gatsby-focus-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: var(--spring-dark);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navbar {
+    padding: 1rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.columns {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.project-sidebar {
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-list a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--spring-light);
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.menu-list a.active {
+    background-color: var(--spring-green);
+}
+
+.main-content {
+    flex: 1;
+    background: #24292e;
+    border-radius: 4px;
+    padding: 2rem;
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.version-badge {
+    background-color: var(--spring-green);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+}
+
+.content-tabs ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 2rem;
+}
+
+.content-tabs a {
+    display: block;
+    padding: 1rem 1.5rem;
+    color: var(--spring-light);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+.content-tabs li.active a {
+    border-bottom-color: var(--spring-green);
+    color: var(--spring-green);
+}
+
+.talks-and-videos {
+    background: #2c3338;
+    border-radius: 4px;
+    padding: 1.5rem;
+}
+
+.chat-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#chat {
+    height: 400px;
+    overflow-y: auto;
+    background: #1b1f23;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+#user-info {
+    background: #1b1f23;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#user-info h3 {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--spring-green);
+}
+
+.input-group {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 0.75rem;
+    background: #1b1f23;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    color: var(--spring-light);
+}
+
+.button.is-spring {
+    background-color: var(--spring-green);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.project-header h1 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.project-header .project-logo {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+    vertical-align: middle;
+}
+.project-sidebar {
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.menu-header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.all-projects {
+    display: flex;
+    align-items: center;
+    color: var(--spring-green);
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.all-projects:hover {
+    color: #8ad05e;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    margin-bottom: 0.5rem;
+}
+
+.menu-list a {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    color: var(--spring-light);
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    transition: background-color 0.2s ease;
+}
+
+.menu-list a:hover {
+    background-color: rgba(109, 179, 63, 0.1);
+}
+
+.menu-list a.is-active {
+    background-color: var(--spring-green);
+    color: #fff;
+    font-weight: 500;
+}
+
+.menu-list .is-parent a {
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
